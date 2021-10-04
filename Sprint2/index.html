@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Registro</title>
+</head>
+
+
+<body>
+    <form action="#" name="form" method="GET" onsubmit="return validar_nombre_usuario();">
+        
+        <label for="in_nombre_usuario">Nombre</label>
+        <input type="text" id="in_nombre_usuario" name="in_nombre_usuario" />
+        <br><br>
+        
+        <label for="in_contrasena">Contraseña</label>
+        <input type="password" id="in_contrasena" name="in_contrasena" />
+        <br><br>
+
+        <label for="in_confirmar_contrasena">Confirmar contraseña</label>
+        <input type="password" id="in_confirmar_contrasena" name="in_confirmar_contrasena" />
+        <br><br>
+
+        <button onclick="validar_nombre_usuario(); validar_contrasena(); confirmar_contrasena();">Enviar datos</button>
+
+    </form>
+
+    <script src="./validaciones.js"></script>
+
+
+</body>
+</html>
